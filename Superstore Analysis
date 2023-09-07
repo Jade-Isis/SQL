@@ -1,0 +1,13 @@
+SELECT * FROM superstore
+ORDER BY price;
+
+SELECT MAX(average_rating)
+FROM superstore;
+
+SELECT MIN(price), 'Kitchen Supplies'
+FROM superstore
+ORDER BY 'Kitchen Supplies';
+
+SELECT * FROM superstore
+WHERE stock_quantity <= 30
+ORDER BY stock_quantity asc;
