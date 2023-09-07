@@ -1,0 +1,29 @@
+CREATE TABLE kicks (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, color TEXT);
+
+INSERT INTO kicks VALUES (1, "Sneakers",5,8,"black");
+INSERT INTO kicks VALUES (2, "Sandals", 6,7,"blue");
+INSERT INTO kicks VALUES (3, "Boots", 9,9, "white");
+INSERT INTO kicks VALUES (4,"Heels", 4, 10, "gold");
+INSERT INTO kicks VALUES (5, "Slippers", 2, 10, "purple");
+
+SELECT * FROM kicks;
+
+SELECT * FROM kicks
+WHERE quantity >= 4
+ORDER BY price asc;
+SELECT SUM(quantity) FROM kicks;
+SELECT MAX (quantity) FROM kicks; 
+SELECT MIN(quantity) FROM kicks;
+
+
+
+
+
+
+
+ 
+
+
+
+
+
